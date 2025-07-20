@@ -28,7 +28,7 @@ With the Control Manager, you can:
 
 You can create a new control in two ways:
 
-*   **From a resource:** You can define a control in a `'CNTL'` resource and then use the `GetNewControl` function to create the control from the resource. This is the easiest way to create a control, and it's the recommended approach for most applications.
+*   **From a resource:** A control can be defined in a `'CNTL'` resource and created with the `GetNewControl` function. This method is convenient for most applications because the control definition resides in the resource fork.
 *   **Programmatically:** You can also create a control programmatically by calling the `NewControl` function. This gives you more control over the control's appearance and behavior, but it's also more complex.
 
 Here's an example of how to create a button from a `'CNTL'` resource:
@@ -80,4 +80,4 @@ A control definition function is a code resource of type `'CDEF'` that is respon
 
 In this chapter, you've learned how to use the Control Manager to create and manage controls in your application. You've seen how to create controls from resources, how to handle control-related events, and how to create custom controls.
 
-In the next chapter, we'll learn about dialog boxes and the Dialog Manager.
+The next chapter discusses dialog boxes and the Dialog Manager.

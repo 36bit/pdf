@@ -1,6 +1,6 @@
 # Chapter 1: Introduction to the Macintosh Toolbox
 
-Welcome to the world of Macintosh programming! This book is your guide to the Macintosh Toolbox, a rich collection of routines and data structures that provide the foundation for the Macintosh user experience. Whether you're a seasoned developer new to the Mac or just starting your programming journey, this book will provide you with the knowledge you need to create powerful and intuitive Macintosh applications.
+Welcome to the world of Macintosh programming. This book serves as a guide to the Macintosh Toolbox, a collection of routines and data structures that form the basis of the Macintosh user experience. Whether you are an experienced developer new to the platform or a newcomer to Mac programming, the chapters that follow explain how to create powerful and intuitive applications.
 
 ## What is the Macintosh Toolbox?
 
@@ -10,7 +10,7 @@ Think of the Toolbox as a set of building blocks. You don't have to create a win
 
 ## Key Concepts
 
-Before we dive into the details of the Toolbox, let's review a few key concepts that you'll encounter throughout this book:
+Before discussing the Toolbox in detail, review a few key concepts that appear throughout this book:
 
 *   **Resources:** Resources are data or code that are stored separately from your application's main executable. This includes things like menus, dialog boxes, icons, and even code itself. Storing these elements as resources makes it easy to modify them without having to recompile your entire application. It also makes it much easier to localize your application for different languages and regions.
 
@@ -30,4 +30,4 @@ This book is organized into three parts.
 
 *   **Part 3: Advanced Topics** delves into more advanced features of the Toolbox. You'll learn how to create custom interface elements, extend the capabilities of the system, and provide online help for your users.
 
-We'll start our journey in the next chapter by taking a closer look at resources and the Resource Manager.
+The next chapter examines resources and the Resource Manager.

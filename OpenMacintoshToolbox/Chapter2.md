@@ -1,6 +1,6 @@
 # Chapter 2: Resources and the Resource Manager
 
-In the last chapter, we introduced the concept of resources as a way to separate data and code from your application's main executable. In this chapter, we'll take a much deeper dive into the world of resources and the powerful Resource Manager that allows you to work with them.
+In the last chapter the concept of resources was introduced as a way to separate data and code from an application's main executable. This chapter examines resources in more detail and explains how the Resource Manager provides access to them.
 
 ## What are Resources?
 
@@ -40,19 +40,13 @@ The Resource Manager handles the low-level details of working with resource fork
 
 ### The Resource Search Path
 
-When you ask the Resource Manager to get a resource, it searches for the resource in a specific order, known as the **resource search path**. The search path typically includes:
-
-1.  The resource fork of the current document
-2.  The resource fork of your application
-3.  The resource fork of the System file
-
-This search path allows you to override resources at different levels. For example, you could create a document-specific menu that overrides the default menu in your application.
+When the Resource Manager is asked to retrieve a resource it follows a defined **resource search path**. The search begins with the resource forks of any files opened by the application, checked in the reverse order in which they were opened. If the resource is not located there, the Manager looks in the application's resource fork and finally in the System file. This ordering allows document-specific resources to override those in the application, and application resources to override those provided by the system.
 
 ### Creating a Resource
 
 You can create resources in several ways:
 
-*   **Using a resource editor:** Tools like ResEdit allow you to create and edit resources visually. This is the easiest way to create resources for things like menus, dialog boxes, and icons.
+*   **Using a resource editor:** Tools like ResEdit allow you to create and edit resources visually. This approach works well for user interface elements such as menus, dialog boxes, and icons.
 *   **Using a resource compiler:** You can also create resources by writing a textual description of the resource in a file and then using a resource compiler like Rez to compile the description into a resource.
 *   **Using the Resource Manager:** You can also create and modify resources programmatically using the Resource Manager routines.
 
@@ -85,10 +79,10 @@ Here are some of the most common resource types you'll encounter:
 *   `'snd '`: Defines a sound.
 *   `'CODE'`: Defines a segment of executable code.
 
-We'll explore many of these resource types in more detail in the chapters to come.
+Many of these resource types are described in greater detail in later chapters.
 
 ## Summary
 
 In this chapter, you've learned about the fundamental role that resources play in Macintosh programming. You've seen how resources allow you to separate data and code from your application, making it easier to localize, customize, and maintain your code. You've also been introduced to the Resource Manager, the powerful set of routines that allows you to work with resources.
 
-In the next chapter, we'll turn our attention to the Event Manager and learn how to respond to user actions like mouse clicks and key presses.
+The next chapter introduces the Event Manager and explains how to respond to user actions such as mouse clicks and key presses.

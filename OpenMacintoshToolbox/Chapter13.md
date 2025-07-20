@@ -18,7 +18,7 @@ With the Help Manager, you can:
 
 ## Creating Help Balloons
 
-The easiest way to create help balloons is to define them in help resources. There are several different types of help resources, each for a different part of the user interface:
+An effective way to create help balloons is to define them in help resources. Several resource types exist, each targeting a different part of the user interface:
 
 *   `'hmnu'`: Defines help balloons for menus.
 *   `'hdlg'`: Defines help balloons for items in a dialog box.
@@ -55,10 +55,9 @@ The key to providing good online help is to write clear, concise, and helpful he
 *   **Be brief:** Users don't want to read a lot of text in a help balloon. Get to the point quickly.
 *   **Be specific:** Tell the user exactly what the item does.
 *   **Use simple language:** Avoid technical jargon.
-*   **Use graphics when appropriate:** A picture can often be worth a thousand words.
+*   **Use graphics when appropriate:** Illustrations can clarify complex concepts.
 
 ## Summary
 
 In this chapter, you've learned how to use the Help Manager to provide online help for your application. You've seen how to create help balloons for menus, dialog boxes, and windows. You've also learned how to write good help messages.
 
-Congratulations! You've reached the end of "Open Macintosh Toolbox." You now have the knowledge you need to create your own powerful and intuitive Macintosh applications.

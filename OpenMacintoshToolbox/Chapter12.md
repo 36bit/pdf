@@ -26,4 +26,4 @@ If you want your application to be able to open documents that have been transla
 
 In this chapter, you've learned how to use the Component Manager and the Translation Manager to extend the capabilities of the Macintosh operating system. You've seen how to find and use components, how to create your own components, and how to use the Translation Manager to translate files from one format to another.
 
-In the next chapter, we'll learn how to provide online help for your users by using the Help Manager.
+The next chapter describes how to provide online help for users by using the Help Manager.
