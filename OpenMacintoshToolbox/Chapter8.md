@@ -24,7 +24,7 @@ You can create Finder resources using a resource editor like ResEdit. When you c
 
 ## Handling Finder Events
 
-When the user interacts with your application's icon or with a document that it created, the Finder sends your application a set of required Apple events. Your application must be ableto handle these events.
+When the user interacts with your application's icon or with a document that it created, the Finder sends your application a set of required Apple events. Your application must be able to handle these events.
 
 The four required Apple events are:
 
