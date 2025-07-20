@@ -4,7 +4,7 @@ The desktop is the user's primary workspace on the Macintosh. It's where they st
 
 ## The Desktop Database
 
-The Finder maintains a central database of information about the files and folders on each volume. This database is known as the **desktop database**. It contains information such as:
+For each volume the Finder stores information about files and folders in a structure called the **desktop database**. It includes details such as:
 
 *   The icons for each file and folder
 *   The file types and creators for each file

@@ -69,4 +69,4 @@ When your application is switched back to the foreground, you will receive a res
 
 In this chapter, you've learned how to use the Scrap Manager to implement cut, copy, and paste functionality in your application. You've seen how to write data to the scrap in multiple formats, how to read data from the scrap, and how to handle suspend and resume events.
 
-In the next chapter, we'll learn about the Desktop Manager and how to interact with the desktop.
+The next chapter introduces the Desktop Manager and explains how to interact with the desktop.

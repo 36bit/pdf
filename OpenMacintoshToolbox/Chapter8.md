@@ -33,10 +33,10 @@ The four required Apple events are:
 *   **Print Documents (`'pdoc'`):** The Finder sends this event to your application when the user selects one or more documents in the Finder and chooses the Print command. In response to this event, you should print the specified documents.
 *   **Quit Application (`'quit'`):** The Finder sends this event to your application when the user chooses the Shut Down or Restart command. In response to this event, you should quit your application, giving the user an opportunity to save any unsaved changes.
 
-We'll learn more about how to handle Apple events in a later chapter.
+Handling Apple events is covered in a later chapter.
 
 ## Summary
 
 In this chapter, you've learned how your application can interact with the Finder. You've seen how to create the Finder resources that the Finder uses to display your application's icon and to associate documents with your application. You've also learned about the four required Apple events that your application must be able to handle.
 
-In the next chapter, we'll learn about the Scrap Manager and how to share data with other applications.
+The next chapter describes the Scrap Manager and explains how to share data with other applications.

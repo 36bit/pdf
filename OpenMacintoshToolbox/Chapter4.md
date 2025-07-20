@@ -29,7 +29,7 @@ With the Window Manager, you can:
 
 You can create a new window in two ways:
 
-*   **From a resource:** You can define a window in a `'WIND'` resource and then use the `GetNewWindow` function to create the window from the resource. This is the easiest way to create a window, and it's the recommended approach for most applications.
+*   **From a resource:** A window can be defined in a `'WIND'` resource and created with the `GetNewWindow` function. This approach is convenient for most applications because the window definition is stored in the resource fork.
 *   **Programmatically:** You can also create a window programmatically by calling the `NewWindow` function. This gives you more control over the window's appearance and behavior, but it's also more complex.
 
 Here's an example of how to create a window from a `'WIND'` resource:
@@ -72,4 +72,4 @@ The Window Manager generates several different types of events that your applica
 
 In this chapter, you've learned about the fundamental role that windows play in the Macintosh user interface. You've seen how to use the Window Manager to create, manage, and draw in windows. You've also learned about the different types of window events and how to handle them.
 
-In the next chapter, we'll learn about menus and the Menu Manager.
+The next chapter introduces menus and the Menu Manager.

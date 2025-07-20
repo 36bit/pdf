@@ -28,7 +28,7 @@ The Icon Utilities also provide routines for:
 
 ## Control Panels
 
-A control panel is a special type of window that allows the user to control the settings of a system-wide feature. For example, the Sound control panel allows the user to control the speaker volume, and the Mouse control panel allows the user to control the mouse tracking speed.
+A control panel is an executable file of type `'cdev'`. When opened from the Finder it appears as a modeless dialog box that lets the user adjust settings for a system-wide feature, such as speaker volume or mouse tracking speed.
 
 You can create your own control panels to provide a user interface for the features in your application. To create a control panel, you need to create a `'cdev'` resource. The `'cdev'` resource contains the code that implements the control panel.
 
@@ -38,4 +38,4 @@ When the user opens your control panel, the Finder will load your `'cdev'` resou
 
 In this chapter, you've learned how to use the List Manager, the Icon Utilities, and the Control Panel framework to create your own custom interface elements. You've seen how to create scrollable lists of items, how to draw and manipulate icons, and how to create your own control panels.
 
-In the next chapter, we'll learn how to extend the capabilities of the system by using the Component Manager and the Translation Manager.
+The next chapter explains how to extend system capabilities with the Component Manager and the Translation Manager.

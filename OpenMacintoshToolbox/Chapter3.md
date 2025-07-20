@@ -66,7 +66,7 @@ The Event Manager can report many different types of events. Here are some of th
 *   `osEvt`: An operating system event has occurred, such as your application being switched to the background.
 *   `kHighLevelEvent`: A high-level event has occurred, such as an Apple event.
 
-We'll learn more about how to handle these different types of events in the chapters to come.
+Later chapters discuss how to handle these different types of events in detail.
 
 ## The Event Record
 
@@ -93,4 +93,4 @@ TYPE
 
 In this chapter, you've learned about the event-driven model of Macintosh programming and the central role of the event loop. You've also been introduced to the Event Manager, the different types of events, and the `EventRecord` data structure.
 
-In the next chapter, we'll learn how to create and manage windows, which are the primary way that users interact with your application.
+The following chapter explains how to create and manage windows, which are the primary way that users interact with an application.

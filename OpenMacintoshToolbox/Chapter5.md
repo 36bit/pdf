@@ -25,7 +25,7 @@ With the Menu Manager, you can:
 
 ## Creating a Menu
 
-The easiest way to create a menu is to define it in a `'MENU'` resource. A `'MENU'` resource contains all the information about a menu, including its title, its items, and their properties.
+Menus are often defined in `'MENU'` resources, which describe the menu title, its items, and their properties.
 
 Here's an example of a `'MENU'` resource for a simple File menu:
 
@@ -82,4 +82,4 @@ You should create these standard menus in your application, and you should follo
 
 In this chapter, you've learned how to use the Menu Manager to create and manage menus in your application. You've seen how to define menus in resources, how to handle menu selections, and how to create the standard Apple, File, and Edit menus.
 
-In the next chapter, we'll learn about controls and the Control Manager.
+The next chapter covers controls and the Control Manager.

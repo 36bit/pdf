@@ -22,7 +22,7 @@ With the Dialog Manager, you can:
 
 ## Creating a Dialog Box
 
-The easiest way to create a dialog box is to define it in a `'DLOG'` resource and an associated `'DITL'` (dialog item list) resource.
+A common way to create a dialog box is to define it in a `'DLOG'` resource along with an associated `'DITL'` (dialog item list) resource.
 
 *   The `'DLOG'` resource defines the dialog box itself, including its size, location, and window type.
 *   The `'DITL'` resource defines the items in the dialog box, such as buttons, checkboxes, and static text.
@@ -63,4 +63,4 @@ If you create a modeless dialog box, you'll need to handle dialog-related events
 
 In this chapter, you've learned how to use the Dialog Manager to create and manage dialog boxes in your application. You've seen how to create both modal and modeless dialog boxes, how to define dialog items in a `'DITL'` resource, and how to handle dialog-related events.
 
-In the next chapter, we'll learn how to interact with the Finder.
+The next chapter explains how to interact with the Finder.
