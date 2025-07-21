@@ -1,0 +1,237 @@
+You are an expert in classic Macintosh system software. Your task is to create a comprehensive and exhaustive outline for an encyclopedia about the Macintosh Resource Manager. This is not a simple chapter outline; it should be structured as a full encyclopedia with multiple volumes, sections, and detailed entries, suitable for an in-depth reference work.
+
+Use Chapter 1, "Resource Manager," from the provided PDF, "Inside Macintosh: More Macintosh Toolbox," as the primary source and structural model for this encyclopedia. The outline should be significantly more detailed and expansive than the chapter's table of contents, breaking down concepts into granular encyclopedia entries.
+
+The encyclopedia should be organized as follows:
+
+Title: Encyclopedia of the Macintosh Resource Manager
+
+Volume I: Fundamentals and Core Concepts
+
+    Part 1: Introduction to the Resource Paradigm
+
+        Entry: Resource Management, Overview
+
+        Entry: The Philosophy of Separating Data from Code
+
+        Entry: The Resource Fork
+
+            Sub-entry: Structure and Purpose
+
+            Sub-entry: Comparison with the Data Fork
+
+            Sub-entry: Physical Format on Disk (Resource Header, Resource Data, Resource Map)
+
+        Entry: The Data Fork
+
+            Sub-entry: Structure and Purpose
+
+            Sub-entry: Typical Contents (User Data vs. Application Data)
+
+        Entry: Resource Types (ResType)
+
+            Sub-entry: Definition and Naming Conventions
+
+            Sub-entry: Table of Standard Resource Types (e.g., 'CODE', 'MENU', 'WIND', 'ICN#', 'snd ')
+
+            Sub-entry: Creating Custom Resource Types
+
+        Entry: Resource IDs
+
+            Sub-entry: Purpose and Uniqueness
+
+            Sub-entry: Numbering Conventions and Ranges (System vs. Application)
+
+            Sub-entry: Owned Resources and ID Calculation
+
+        Entry: Resource Names
+
+            Sub-entry: Purpose and Usage
+
+            Sub-entry: Comparison with Resource IDs
+
+    Part 2: The Resource Map
+
+        Entry: Resource Map, In-Depth
+
+            Sub-entry: On-Disk Format (Offsets, Type List, Reference Lists, Name List)
+
+            Sub-entry: In-Memory Format (Handles, State Information)
+
+        Entry: Resource Attributes
+
+            Sub-entry: Detailed breakdown of each attribute bit (resSysHeap, resPurgeable, resLocked, resProtected, resPreload, resChanged)
+
+            Sub-entry: Practical Application of Attributes
+
+        Entry: Search Path for Resources
+
+            Sub-entry: The Concept of the Current Resource File
+
+            Sub-entry: The Chain of Resource Maps (Document, Application, System File, ROM)
+
+            Sub-entry: How the Search Path Enables Overriding and Sharing
+
+Volume II: The Resource Manager API
+
+    Part 1: Initialization and File Operations
+
+        Entry: Initializing the Resource Manager (InitResources)
+
+        Entry: Opening a Resource Fork
+
+            Sub-entry: OpenResFile
+
+            Sub-entry: HOpenResFile
+
+            Sub-entry: FSpOpenResFile (System 7+)
+
+        Entry: Creating a Resource Fork
+
+            Sub-entry: CreateResFile
+
+            Sub-entry: HCreateResFile
+
+            Sub-entry: FSpCreateResFile (System 7+)
+
+        Entry: Closing a Resource Fork (CloseResFile)
+
+        Entry: Managing the Current Resource File
+
+            Sub-entry: CurResFile
+
+            Sub-entry: UseResFile
+
+        Entry: Error Handling (ResError)
+
+    Part 2: Reading and Accessing Resources
+
+        Entry: Getting a Resource by ID
+
+            Sub-entry: GetResource
+
+            Sub-entry: Get1Resource (Searching the Current File Only)
+
+        Entry: Getting a Resource by Name
+
+            Sub-entry: GetNamedResource
+
+            Sub-entry: Get1NamedResource
+
+        Entry: Getting a Resource by Index
+
+            Sub-entry: GetIndResource
+
+            Sub-entry: Get1IndResource
+
+        Entry: Loading Resources into Memory (LoadResource, SetResLoad)
+
+        Entry: Releasing and Detaching Resources
+
+            Sub-entry: ReleaseResource
+
+            Sub-entry: DetachResource
+
+        Entry: Accessing Partial Resources (System 7+)
+
+            Sub-entry: ReadPartialResource
+
+            Sub-entry: WritePartialResource
+
+            Sub-entry: SetResourceSize
+
+    Part 3: Modifying and Writing Resources
+
+        Entry: Adding a Resource (AddResource)
+
+        Entry: Modifying an Existing Resource
+
+            Sub-entry: ChangedResource
+
+            Sub-entry: Handling Purgeable Resources During Modification
+
+        Entry: Removing a Resource (RemoveResource)
+
+        Entry: Writing Changes to Disk
+
+            Sub-entry: WriteResource
+
+            Sub-entry: UpdateResFile
+
+        Entry: Generating Unique IDs
+
+            Sub-entry: UniqueID
+
+            Sub-entry: Unique1ID
+
+    Part 4: Introspection and Information
+
+        Entry: Counting Resources
+
+            Sub-entry: CountResources
+
+            Sub-entry: Count1Resources
+
+        Entry: Counting Resource Types
+
+            Sub-entry: CountTypes
+
+            Sub-entry: Count1Types
+
+        Entry: Getting Resource Information
+
+            Sub-entry: GetResInfo
+
+            Sub-entry: SetResInfo
+
+        Entry: Getting and Setting Attributes
+
+            Sub-entry: GetResAttrs
+
+            Sub-entry: SetResAttrs
+
+        Entry: Getting Resource Size
+
+            Sub-entry: GetResourceSizeOnDisk
+
+            Sub-entry: GetMaxResourceSize
+
+        Entry: Finding a Resource's Home File (HomeResFile)
+
+Volume III: System Resources and Advanced Topics
+
+    Part 1: Resources in the System File
+
+        Entry: The System File's Role
+
+        Entry: Standard User Interface Resources ('CURS', 'PAT ', 'PAT#')
+
+        Entry: Packages ('PACK')
+
+        Entry: Function Key Resources ('FKEY')
+
+        Entry: Standard Icons ('ICN#', 'ics#', etc.)
+
+        Entry: User Information Resources ('STR ')
+
+    Part 2: ROM Resources
+
+        Entry: The ROM Resource Map
+
+        Entry: Accessing ROM Resources (RGetResource)
+
+        Entry: Overriding ROM Resources ('ROvr', 'ROv#')
+
+    Part 3: Practical Application and Best Practices
+
+        Entry: Localization Strategies Using Resources
+
+        Entry: Using Resources for Application Preferences
+
+        Entry: Using Resources for Document-Specific Settings
+
+        Entry: Resource Management and Memory Management
+
+        Entry: Common Pitfalls and Troubleshooting
+
+Ensure that every routine and major concept from Chapter 1 of the PDF is represented as a distinct entry or sub-entry in the outline. The structure should be logical for a large-scale reference work, moving from general concepts to specific API details and advanced topics.
