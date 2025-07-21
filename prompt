@@ -20,8 +20,6 @@ Volume I: Fundamentals and Core Concepts
 
             Sub-entry: Comparison with the Data Fork
 
-            Sub-entry: Physical Format on Disk (Resource Header, Resource Data, Resource Map)
-
         Entry: The Data Fork
 
             Sub-entry: Structure and Purpose
@@ -32,7 +30,11 @@ Volume I: Fundamentals and Core Concepts
 
             Sub-entry: Definition and Naming Conventions
 
-            Sub-entry: Table of Standard Resource Types (e.g., 'CODE', 'MENU', 'WIND', 'ICN#', 'snd ')
+            Sub-entry: Tables of Resource Types
+
+                Sub-sub-entry: Standard Resource Types (e.g., 'CODE', 'MENU', 'WIND', 'ICN#')
+
+                Sub-sub-entry: Reserved System Resource Types
 
             Sub-entry: Creating Custom Resource Types
 
@@ -50,13 +52,27 @@ Volume I: Fundamentals and Core Concepts
 
             Sub-entry: Comparison with Resource IDs
 
-    Part 2: The Resource Map
+    Part 2: The Resource Map and File Format
 
-        Entry: Resource Map, In-Depth
+        Entry: Resource File Format, In-Depth
 
-            Sub-entry: On-Disk Format (Offsets, Type List, Reference Lists, Name List)
+            Sub-entry: The Resource Header
 
-            Sub-entry: In-Memory Format (Handles, State Information)
+            Sub-entry: Resource Data Format
+
+            Sub-entry: The On-Disk Resource Map
+
+                Sub-sub-entry: The Resource Type List
+
+                Sub-sub-entry: The Reference Lists
+
+                Sub-sub-entry: The Resource Name List
+
+        Entry: The In-Memory Resource Map
+
+            Sub-entry: Structure and Relationship to On-Disk Map
+
+            Sub-entry: Handles and State Information
 
         Entry: Resource Attributes
 
@@ -76,11 +92,19 @@ Volume II: The Resource Manager API
 
     Part 1: Initialization and File Operations
 
-        Entry: Initializing the Resource Manager (InitResources)
+        Entry: Checking for Feature Availability (Gestalt)
+
+        Entry: Initializing the Resource Manager
+
+            Sub-entry: InitResources
+
+            Sub-entry: RsrcZoneInit
 
         Entry: Opening a Resource Fork
 
             Sub-entry: OpenResFile
+
+            Sub-entry: OpenRFPerm
 
             Sub-entry: HOpenResFile
 
@@ -124,7 +148,13 @@ Volume II: The Resource Manager API
 
             Sub-entry: Get1IndResource
 
-        Entry: Loading Resources into Memory (LoadResource, SetResLoad)
+        Entry: Loading and Purging Resources
+
+            Sub-entry: LoadResource
+
+            Sub-entry: SetResLoad
+
+            Sub-entry: SetResPurge
 
         Entry: Releasing and Detaching Resources
 
@@ -148,9 +178,9 @@ Volume II: The Resource Manager API
 
             Sub-entry: ChangedResource
 
-            Sub-entry: Handling Purgeable Resources During Modification
+            Sub-entry: Handling Purgeable Resources During Modification (and SetResPurge)
 
-        Entry: Removing a Resource (RemoveResource)
+        Entry: Removing a Resource (RemoveResource, alias RmveResource)
 
         Entry: Writing Changes to Disk
 
@@ -172,11 +202,15 @@ Volume II: The Resource Manager API
 
             Sub-entry: Count1Resources
 
-        Entry: Counting Resource Types
+        Entry: Enumerating Resource Types
 
             Sub-entry: CountTypes
 
+            Sub-entry: GetIndType
+
             Sub-entry: Count1Types
+
+            Sub-entry: Get1IndType
 
         Entry: Getting Resource Information
 
@@ -184,19 +218,27 @@ Volume II: The Resource Manager API
 
             Sub-entry: SetResInfo
 
-        Entry: Getting and Setting Attributes
+        Entry: Managing Resource Attributes
 
             Sub-entry: GetResAttrs
 
             Sub-entry: SetResAttrs
 
+        Entry: Managing Resource Fork Attributes
+
+            Sub-entry: GetResFileAttrs
+
+            Sub-entry: SetResFileAttrs
+
         Entry: Getting Resource Size
 
-            Sub-entry: GetResourceSizeOnDisk
+            Sub-entry: GetResourceSizeOnDisk (alias SizeResource)
 
-            Sub-entry: GetMaxResourceSize
+            Sub-entry: GetMaxResourceSize (alias MaxSizeRsrc)
 
         Entry: Finding a Resource's Home File (HomeResFile)
+
+        Entry: Advanced Map Access (RsrcMapEntry)
 
 Volume III: System Resources and Advanced Topics
 
@@ -224,6 +266,12 @@ Volume III: System Resources and Advanced Topics
 
     Part 3: Practical Application and Best Practices
 
+        Entry: Integration with the Macintosh Toolbox
+
+            Sub-entry: How Managers like GetNewCWindow or GetNewMBar use the Resource Manager implicitly.
+
+            Sub-entry: Understanding when to call the Resource Manager directly vs. letting another manager do it.
+
         Entry: Localization Strategies Using Resources
 
         Entry: Using Resources for Application Preferences
@@ -233,5 +281,35 @@ Volume III: System Resources and Advanced Topics
         Entry: Resource Management and Memory Management
 
         Entry: Common Pitfalls and Troubleshooting
+
+Volume IV: Developer Reference
+
+    Part 1: Pascal Interface
+
+        Entry: Constants
+
+        Entry: Data Types
+
+        Entry: Routine Summary
+
+    Part 2: C Interface
+
+        Entry: Constants
+
+        Entry: Data Types
+
+        Entry: Routine Summary
+
+    Part 3: Assembly-Language Interface
+
+        Entry: Trap Macros
+
+        Entry: Global Variables
+
+        Entry: Data Structure Offsets
+
+    Part 4: Result Codes
+
+        Entry: Complete List of Resource Manager Result Codes
 
 Ensure that every routine and major concept from Chapter 1 of the PDF is represented as a distinct entry or sub-entry in the outline. The structure should be logical for a large-scale reference work, moving from general concepts to specific API details and advanced topics.
